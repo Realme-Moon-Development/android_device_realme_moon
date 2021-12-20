@@ -79,6 +79,12 @@ on post-fs-data
     # Services
     stop console
 
+    # Disable edge limit control interface
+    write /proc/touchpanel/oplus_tp_limit_enable 0
+
+    # Enable oppo touchpanel direction
+    write /proc/touchpanel/oplus_tp_direction 1
+
 on boot
     # Set permission for Goodix FP
     chown system system /dev/goodix_fp
