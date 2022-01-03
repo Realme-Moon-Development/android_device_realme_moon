@@ -130,6 +130,9 @@ PRODUCT_COPY_FILES += \
 -include $(DEVICE_PATH)/system_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
