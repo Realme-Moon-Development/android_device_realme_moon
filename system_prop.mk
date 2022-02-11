@@ -12,6 +12,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
    persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
    iorapd.readahead.enable=true
 
+# Dex2oat
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.bg.dexopt.enable=true \
+    dalvik.vm.dexopt.secondary=true \
+    pm.dexopt.install=speed-profile \
+    pm.dexopt.bg-dexopt=speed-profile \
+    pm.dexopt.boot=verify \
+    pm.dexopt.first-boot=quicken \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5 \
+    dalvik.vm.dex2oat-threads=6
+
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=320
