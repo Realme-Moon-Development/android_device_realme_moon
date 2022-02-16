@@ -28,6 +28,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # IMS
 $(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
 
+# RealmeDirac 
+$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
+
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
