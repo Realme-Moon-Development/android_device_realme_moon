@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/moon/moon-vendor.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # IMS
 $(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
 
