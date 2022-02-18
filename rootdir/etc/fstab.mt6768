@@ -53,4 +53,4 @@ odm                               /odm                  ext4      ro            
 /dev/block/by-name/boot_para      /boot_para            emmc      defaults                                                                                        defaults
 /dev/block/by-name/otp            /otp                  emmc      defaults                                                                                        defaults
 /devices/platform/externdevice*   auto                  auto      defaults                                                                                        voldmanaged=sdcard1:auto
-/devices/platform/mt_usb*         auto                  vfat      defaults 
+/devices/platform/mt_usb*         auto                  vfat      defaults                                                                                        voldmanaged=usbotg:auto
