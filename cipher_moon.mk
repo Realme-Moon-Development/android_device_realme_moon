@@ -21,8 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/moon/device.mk)
 
+# Inherit some common Cipher stuff
+$(call inherit-product, vendor/cipher/config/common.mk)
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_moon
+PRODUCT_NAME := cipher_moon
 PRODUCT_DEVICE := moon
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme Moon
