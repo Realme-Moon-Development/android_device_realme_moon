@@ -24,6 +24,9 @@ $(call inherit-product, device/realme/moon/device.mk)
 # Inherit some common Cipher stuff
 $(call inherit-product, vendor/cipher/config/common.mk)
 
+# Gapps
+CIPHER_GAPPS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cipher_moon
 PRODUCT_DEVICE := moon
